@@ -1,0 +1,263 @@
+:root{
+    --padding-section:50px
+}
+*{margin: 0;padding: 0;}
+/* start  scrool style  */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #eee;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: brown;
+    border-radius: 0;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: black;
+  }
+
+  /* end scroll style  */
+.section1,
+.section2,
+.section3,
+.section4,
+.section5{
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+/* start sectio 1 in css  */
+.section1{
+    background-color:#f5d76e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 .timer{
+    display: flex;
+
+}
+.section1 .timer .date{
+    text-align: center;
+    margin: 0 20px;
+    border-radius: 4px;
+    padding: 5px;
+    border: 2px solod #6ef5df;
+}
+.section1 .timer .date h1{
+margin-bottom: 10px;
+}
+.section1 .timer .date p{
+    color: #0b47d2;
+    font-weight: normal;
+    
+}
+/* end section1 css */
+/* start section 2 css  */
+.section2{
+background-color: #9b6ef5;
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+grid-gap: 30px;
+text-align: center;
+   
+}
+.section2 .polygons{
+    background-color: #eee;
+    padding: 10px;
+    margin: 50px auto;
+}
+.section2 .polygons:nth-child(1) .cercle{
+  width: 200px;
+  height: 200px;
+  background-color: #0b47d2;
+  clip-path: circle(70px at 50% 50%);
+}
+.section2 .polygons:nth-child(2) .traingle{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(50% 0%,100% 100% ,0% 100%);
+}
+.section2 .polygons:nth-child(3) .star{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+.section2 .polygons:nth-child(4) .shape1{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(25% 0, 100% 0, 75% 100%, 0 100%);
+}
+.section2 .polygons:nth-child(5) .shape2{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+.section2 .polygons:nth-child(6) .shape3{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    background-color: #0b47d2;
+    clip-path: circle(50% at 50% 50%);
+}
+
+.section2 .polygons:nth-child(6) .shape3 .star{
+    width: 200px;
+    height: 200px;
+
+    background-color: #0bd215;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+
+}
+.section2 .polygons:nth-child(7){
+    position: relative;
+}
+.section2 .polygons:nth-child(7) .shape4{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+
+}
+.section2 .polygons:nth-child(7) .inverse{
+    width: 200px;
+    height: 200px;
+    background-color: #d2890b;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+   position: absolute;
+   top: 10px;   z-index: 1;
+}
+.section2 .polygons:nth-child(7) .req{
+    width: 200px;
+    height: 200px;
+    background-color: #0bd251;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+   position: absolute;
+   top: 10px;
+   right: 10px;
+
+}
+.section2 .polygons:last-child .shape5{
+    width: 200px;
+    height: 200px;
+    background-color: #0b47d2;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+/* end section 2 css */
+/* start section 3 css  */
+.section3{
+    background-color: #6ef577;   display: flex;
+    align-items: center; justify-content: center;
+}
+.section3 .box{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    width: 350px;
+    padding: 20px;
+    background-color: rgba(212, 127, 255, 0.317);
+}
+.section3 .box .num{
+    margin: 0 10px;
+    text-align: center;
+}
+/* end section 3 css */
+/* start section 4 css  */
+.section4{
+  background-color: #f5a26e;
+}
+.section4 .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.section4 .flex .content{
+    width: 500px;
+}
+.section4 .flex .content h1{
+font-weight: normal;
+margin: 20px 0;
+}
+.section4 .flex .content p{
+    margin: 20px 0;
+}
+.section4 .flex .bars .bar{
+    max-width: 100%;
+    width: 400px;
+    height: 30px;
+    background-color: #dedede;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.section4 .flex  .bars h2{
+    font-size: 30px;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+.section4 .flex  .bars h1{
+    font-weight: normal;
+}
+.section4 .flex .bars .bar span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+background-color: red;
+transition: width 0.3s linear;
+}
+/* end section4 css */
+/* start section 5 css  */
+.section5{
+
+    background-color: #d2890b;
+
+}
+.section5 .form{
+    width: 400px;
+    margin: auto;
+}
+.section5 .form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.section5 .form form label{
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-weight: normal;
+    font-size: 24px;
+   text-transform: capitalize;
+}
+.section5 .form form input{
+    padding: 7px;
+    outline: none;
+    border: 2px solid #ef9b0b;
+    border-radius: 4px;
+}
+.section5 .form form textarea{
+    padding: 5px;
+    outline: none;
+    border-radius: 4px;
+    resize: none;
+    height: 150px;
+    border: 2px solid #ef9b0b;
+}
+
+.section5 .form form span{
+    text-align: end;
+    margin-top: -2px;
+}
+.zero{
+    color: red;
+}
+/* end section 5  */
